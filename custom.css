@@ -1,3 +1,7 @@
 #navBar {
 	background-color: red;
 }
+
+.navButton {
+	border: none;
+}
