@@ -1,6 +1,18 @@
 #navBar {
 	background-color: blue;
 	height: 40px;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+}
+
+#homeButton {
+	float: left; 
+	display: inline-block;
+}
+
+#content {
+	margin: 70px auto;
 }
 
 .navButton {
