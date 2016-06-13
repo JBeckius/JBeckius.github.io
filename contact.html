@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>John Beckius</title>
+    <title>Contact John Beckius</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<!-- Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="custom.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
 	
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -20,7 +20,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body style="margin: 0;">
+   <body>
 	<div class="container-fluid">
 		
 		
@@ -29,25 +29,42 @@
 			<!-- Home button -->
 			<div id="homeButton" >
 				
-				<a href="page.html">
+				<a href="index.html">
 					<div id="crossfade">
-						<img class="bottom" src="img/JBOnlyLogoWhite.png" style="height: 45px">
-						<img class="top" src="img/jBOnlyLogo.png" style="height: 45px">						
+						<img alt="" class="bottom" src="img/JBOnlyLogoWhite.png">
+						<img alt="" class="top" src="img/jBOnlyLogo.png">						
 					</div>
 				</a>
 				
 			</div>
 			<!-- Nav buttons -->
-			<div  style="float: right; display: inline-block;">
+			<div  id="rightBar">
 				<a href="about.html"><button class="navButton">About</button></a>
 				<a href="contact.html"><button class="navButton">Contact</button></a>
-				<button class="navButton">Button3</button>
-			</div>
+				<button class="navButton">Resume</button>
+			</div> 
+		<!-- End Nav Bar -->
 			
 			
 		</div>	
-		<div id="content">
-			<h1>Hello, world!</h1>
+		<div class="content">
+			<h1>Reaching Out</h1>
+			<p id="memories">Interested in making memories? Chatting about this, that, and the other?<br />
+			Leave me your name, e-mail address, and a few words about yourself and I'll see what 
+			I can whip up.<p>
+			<form action='#'>
+				<label><p>Name:
+					<input id="nameForm" type="text" name="name" size="30" maxlength="40" />
+				</p></label><br />
+				<label><p>E-mail:
+					<input id="emailForm" type="email" name="email" />
+				</p> </label> <br />
+				<label><p>A few choice words:</p>
+				<textarea id="commentsForm" name="comments" placeholder="Type 'em here..." cols="40" rows="5" onclick="javascript:eraseText();"
+				   >Type 'em here...</textarea><br />
+				</label><br />
+				<input class="pageButton" id="submitForm" type="submit" name="submit" value="Bombs Away" />
+			</form>
 		</div>
 		
 	</div>
@@ -55,5 +72,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
+	<!-- Bespoke JS in parent folder -->
+	<script src="js/contact.js"></script>
   </body>
 </html>

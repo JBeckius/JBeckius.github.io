@@ -10,7 +10,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<!-- Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="custom.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
 	
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -20,7 +20,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body style="margin: 0;">
+  <body>
 	<div class="container-fluid">
 		
 		
@@ -29,25 +29,36 @@
 			<!-- Home button -->
 			<div id="homeButton" >
 				
-				<a href="page.html">
+				<a href="index.html">
 					<div id="crossfade">
-						<img class="bottom" src="img/JBOnlyLogoWhite.png" style="height: 45px">
-						<img class="top" src="img/jBOnlyLogo.png" style="height: 45px">						
+						<img alt="" class="bottom" src="img/JBOnlyLogoWhite.png">
+						<img alt="" class="top" src="img/jBOnlyLogo.png">						
 					</div>
 				</a>
 				
 			</div>
 			<!-- Nav buttons -->
-			<div  style="float: right; display: inline-block;">
+			<div  id="rightBar">
 				<a href="about.html"><button class="navButton">About</button></a>
 				<a href="contact.html"><button class="navButton">Contact</button></a>
-				<button class="navButton">Button3</button>
-			</div>
+				<button class="navButton">Resume</button>
+			</div> 
+		<!-- End Nav Bar -->
 			
 			
 		</div>	
-		<div id="content">
-			<h1>Hello, world!</h1>
+		<div id="indexContent" class="content">
+			<h1>John Beckius</h1>
+			<div id="imageRow">
+				<img id="NGKLogo" src="img/NGK/NGKThumbnail.jpg" alt="NGK Sparkplug Logo"></img>
+				<img id="OCLogo" src="img/owensCorning/OCLogo200.png" alt="Owens Corning Logo"></img>
+				<img id="BDLogo" src="img/blackDiamond/bdThumbnail.jpg" alt="Black Diamond Logo"></img>
+				<img id="DBLogo" src="img/deepBlue/deepBlueThumbnail.jpg" alt="Deep Blue Watches Logo"></img>
+			</div>
+			
+			<blockquote cite="https://en.wikiquote.org/wiki/Publilius_Syrus">
+				<p>It is a bad plan that admits of no modification <br /> -Publilius Syrus, Sententiae</p>
+			</blockquote>
 		</div>
 		
 	</div>

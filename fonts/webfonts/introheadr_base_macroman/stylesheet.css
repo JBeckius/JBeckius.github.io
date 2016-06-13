@@ -1,0 +1,37 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2016 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Fontfabric
+ * License URL: https://www.fontspring.com/licenses/fontfabric/webfont
+ *
+ *
+ */
+
+@font-face {
+    font-family: 'intro_head_rbase';
+    src: url('introheadr-base-webfont.eot');
+    src: url('introheadr-base-webfont.eot?#iefix') format('embedded-opentype'),
+         url('introheadr-base-webfont.woff2') format('woff2'),
+         url('introheadr-base-webfont.woff') format('woff'),
+         url('introheadr-base-webfont.ttf') format('truetype'),
+         url('introheadr-base-webfont.svg#intro_head_rbase') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
