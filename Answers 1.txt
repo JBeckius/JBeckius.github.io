@@ -1,0 +1,5 @@
+The Following Questions.
+1. 5. I feel pretty confident.
+2. Most difficult part of accomplishing these tasks was, honestly, divining how form labels worked.
+3. I need to focus on organizing my CSS in a cleaner fashion. Right now, it's kind of a mess and I'm
+   not sure what best practice should be.

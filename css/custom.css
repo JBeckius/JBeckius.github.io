@@ -1,3 +1,4 @@
+/*Imported Font*/
 @font-face {
     font-family: 'intro_head_rbase';
     src: url('../fonts/introheadr_base_macroman/introheadr-base-webfont.eot');
@@ -16,9 +17,17 @@ body {
 	text-align: center;
 }
 
+header h1 {
+	display: none;
+}
+
 textarea {
 	font-family: sans-serif;
 	color: darkgrey;
+}
+
+nav {
+	/* Might use to change nav button block width to 70%*/
 }
 
 #navBar {
@@ -67,6 +76,8 @@ button a {
 	position: center;
 	height: 50px;
 }
+
+/* I hope you'll accept this as my opacity alteration, even though it's not a background.*/
 #crossfade img {
 	position: absolute;
 	height: 45px;
@@ -79,6 +90,7 @@ button a {
 .navButton {
 	font-size: 16px;
 	color: black;
+	/* Added background-color, styled something else's opacity. */
 	background-color: #E9E9E9;
 	font-family: "verdana", sans-serif;
 	height:50px;
@@ -119,16 +131,22 @@ button a {
 #imageRow img {
 	width: 200px/*10em*/;
 	height: 200px/*10em*/;
-}
-#imageRow #BDLogo {
 	border-radius: 5%;
+}
+
+#imageRow img:hover {
+	border: 2px solid black !important;
+	border-radius: 5%;
+}
+
+#imageRow #BDLogo {
+	/* for future use */
 }
 #imageRow #DBLogo {
-	border-radius: 5%;
+	
 }
 #imageRow #NGKLogo {
 	border: 1px solid #c0c0c0;
-	border-radius: 5%;
 	padding: 1px;
 }
 
@@ -140,14 +158,15 @@ blockquote {
 	margin-right: 0px;
 	padding-right: 0px;
 }
+
 #aboutPhoto img{
 	float: right;
-	width: 450px;
+	width: 100%;
 	display: block;
 	margin-right: 15px;
 	margin-top: 25px;
+	border: 1px solid #c0c0c0;
 }
-
 
 #aboutText {
 	margin-top: 3px;
