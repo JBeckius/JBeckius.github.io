@@ -1,0 +1,10 @@
+Questions: Round 2
+
+1. About a four. Everything works, but it'll be a while before I can do it
+	without a bunch of googling.
+2. Research took a few hours, a mix of Stack Overflow, W3C, the textbook, and whatever other riffraff
+	google swept my way. The difficulty came in figuring out how to intercept the form
+	input for use in a JS function. My original solution was a bit too complicated.	
+	But when I simplified, things clicked into place real fast.
+3. I have a bunch of buttons wrapped in anchors. Help me. Please.
+4. Getting and appending elements. You know, inspiration for me to not forget things over the weekend.

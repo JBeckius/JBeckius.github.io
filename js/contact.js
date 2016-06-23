@@ -4,25 +4,28 @@ function eraseText() {
 	commentsForm.style.color = "black";
 }
 
+/* Hmm, not so functional.
 function eraseText(ele) {
 	var content = ele.textContent
 	content = "";
-}
+} */
 
 
-{let i = 1;
+{	let i = 1; //Defines i for function iteration. God bless block scoping.
 
 	function resetContent(content) {
+		/* Removes appended elements from manipulate(). */
 		document.getElementById(content).innerHTML = "";
 		i = 1;
 	}
 
 	function manipulate() {
-		console.log(1);
+		/* Takes form input and appends a modified message to the page */
 		var JSForm = document.getElementById("JSButton");
 		var formValue = JSForm.value;
-		console.log(formValue);
+		//console.log(formValue); //testing, testing
 		var inputLog = document.getElementById("inputLog");
+		/* Checks for form input. If no input, gives error message */
 		if (formValue) {
 			var msgDiv = document.createElement("div");
 			var msg = document.createTextNode(i + ". You input '" + formValue +"'");
