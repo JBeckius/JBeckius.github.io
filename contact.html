@@ -40,7 +40,8 @@
 					<!-- Nav buttons -->
 					<div  id="rightBar">
 						<a href="about.html"><button class="navButton">About</button></a>
-						<a href="contact.html"><button class="navButton">Contact</button></a>
+						<a href="advertising.html"><button class="navButton">Advertising</button></a>
+						<a href="contact.html"><button class="navButton">Contact</button></a>						
 						<!-- For later use <button class="navButton">Resume</button> -->
 					</div>
 				</div> 
@@ -54,25 +55,35 @@
 			I can whip up.<p>
 			<!-- Fix form widths so they don't go beyond screen edge on smaller windows. -->
 			<form action='#'>
-				<label><p>Name:
-					<input id="nameForm" type="text" name="name" size="30" maxlength="40" />
-				</p></label><br />
-				<label><p>E-mail:
-					<input id="emailForm" type="email" name="email" />
-				</p> </label> <br />
-				<label><p>A few choice words:</p>
-				<textarea id="commentsForm" name="comments" placeholder="Type 'em here..." cols="40" rows="5" onclick="javascript:eraseText();"
-				   >Type 'em here...</textarea><br />
-				</label><br />
+				<div class="form-group">
+					<label><p>Name:
+						<input id="nameForm" class="form-control" type="text" name="name" size="30" maxlength="40" />
+					</p></label>
+				</div>
+				<div class="form-group">
+					<label><p>E-mail:
+						<input id="emailForm" class="form-control" type="email" name="email" />
+					</p> </label>
+				</div>
+				
+				<div class="control-group">
+					<label><p>A few choice words:</p>
+					<textarea id="commentsForm" class="form-control" name="comments" placeholder="Type 'em here..." cols="40" rows="5" onclick="javascript:eraseText();"
+					   >Type 'em here...</textarea>
+					</label>
+				</div>
 				<input class="pageButton" id="submitForm" type="submit" name="submit" value="Bombs Away" />
 			</form>
-			
-				<form id="JSForm" action = '#'  method="post">
-					<div id = "main">
-						<p>Javascripty Button:
-							<input id="JSButton" type="text" name="JSButton" size="40" maxlength="40" />
-						</p>
-						<input type="submit" value="submit"/>
+				<!-- Proof of JS! -->
+				<form id="JSForm" action = '#'  method="post" onsubmit="return manipulate()">
+					<div id = "main" class="control-group">
+						<label><p>Leave yourself a series of impermanent messages!
+							<input id="JSButton" class="form-control" type="text" onclick="eraseText(this);" name="JSButton" size="40" maxlength="40" />
+						</p></label>
+						<input type="submit" id="JSSubmit" class="form-control pageButton" value="submit"/>
+						<input type="button" id="JSReset" class="form-control pageButton" onclick="resetContent('inputLog')" value="reset"/>
+						<div id="inputLog">
+						</div>
 					</div>
 				</form>
 			

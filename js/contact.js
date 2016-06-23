@@ -4,7 +4,44 @@ function eraseText() {
 	commentsForm.style.color = "black";
 }
 
-function addEvent(el, event, callback) {
+function eraseText(ele) {
+	var content = ele.textContent
+	content = "";
+}
+
+
+{let i = 1;
+
+	function resetContent(content) {
+		document.getElementById(content).innerHTML = "";
+		i = 1;
+	}
+
+	function manipulate() {
+		console.log(1);
+		var JSForm = document.getElementById("JSButton");
+		var formValue = JSForm.value;
+		console.log(formValue);
+		var inputLog = document.getElementById("inputLog");
+		if (formValue) {
+			var msgDiv = document.createElement("div");
+			var msg = document.createTextNode(i + ". You input '" + formValue +"'");
+			i++;
+			msgDiv.appendChild(msg);
+			inputLog.appendChild(msgDiv);
+			JSForm.value = "";
+		} else {
+			var errorDiv = document.createElement("div");
+			var errorMsg = document.createTextNode("C'mon, give me something.");
+			errorDiv.appendChild(errorMsg);
+			inputLog.appendChild(errorDiv);
+		}
+		
+			
+		return false;
+	}
+}
+/* function addEvent(el, event, callback) {
 	if ('addEventListener' in el) {
 		el.addEventListener(event, callback, false);
 	} else {
@@ -26,4 +63,4 @@ function addEvent(el, event, callback) {
 			var msg = "You input '" + buttonInput + "'. Is this input correct?";
 			document.getElementById("main").textContent = msg;
 		});
-}())
+}()) */
