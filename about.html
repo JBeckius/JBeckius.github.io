@@ -11,7 +11,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
-	
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,33 +22,33 @@
   </head>
    <body>
 	<div class="container-fluid">
-		<header>	
-			
-			<nav><!-- Navigation bar -->
-				<div id="navBar">
-					<!-- Home button -->
-					<div id="homeButton" >
-						
-						<a href="index.html">
-							<div id="crossfade">
-								<img alt="" class="bottom" src="img/jBOnlyLogoWhite.png">
-								<img alt="" class="top" src="img/jBOnlyLogo.png">						
-							</div>
-						</a>
-						
-					</div>
-					<!-- Nav buttons -->
-					<div  id="rightBar">
-						<a href="about.html"><button class="navButton">About</button></a>
-						<a href="advertising.html"><button class="navButton">Advertising</button></a>
-						<a href="contact.html"><button class="navButton">Contact</button></a>						
-						<!-- For later use <button class="navButton">Resume</button> -->
-					</div>
-				</div> 
-			</nav><!-- End Nav Bar -->
-		</header>		
-			
-		</div>	
+		<header>
+
+      <nav>
+        <ul class="cf">
+          <li  id="home">
+            <a href="index.html">
+              <div id="crossfade">
+                <img src="img/jBOnlyLogoWhite.png" class="bottom" alt="John Beckius Logo">
+                <img src="img/jBOnlyLogo.png" class="top" alt="John Beckius Logo">
+              </div>
+            </a>
+          </li>
+          <li class="navButton" id="contact"><a href="contact.html">Contact</a></li>
+          <li class="navButton" id="advertising"><a href="advertising.html">Advertising</a></li>
+          <li class="navButton" id="about"><a href="about.html">About</a></li>
+          <li class="navButton" id="menu"><a class="dropdown" href="#">Menu</a>
+            <ul>
+                <li class="navButton"><a href="about.html">About</a></li>
+                <li class="navButton"><a href="advertising.html">Advertising</a></li>
+                <li class="navButton"><a href="contact.html">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- End Nav Bar -->
+		</header>
+
+		</div>
 		<div class="container-fluid, content">
 			<div id="aboutPhoto" class="col-md-6">
 				<img src="img/johnPit.jpg" alt="John Beckius in a hole.">
@@ -56,9 +56,9 @@
 			<div class="col-md-4" id="aboutText">
 				<h3>What can I say?</h3>
 				<p>
-					Born in Minnesota, lived three different places in Illinois, 5 years in Detroit, 
-					high school in South Korea, University in Wyoming and New Zealand, 
-					Colorado and California for a bit, now back in Detroit. 
+					Born in Minnesota, lived three different places in Illinois, 5 years in Detroit,
+					high school in South Korea, University in Wyoming and New Zealand,
+					Colorado and California for a bit, now back in Detroit.
 					I'd like to say it's full circle, but there's a little extra bit hanging off there so it's really more of a balloon.
 				</p>
 				<p>
@@ -84,14 +84,14 @@
 				<p>
 					And a feel for when a good visual can do all the work.
 				</p>
-				
+
 				<!-- Behold, an external link -->
 				<p>Check <a href="https://www.behance.net/JBeckius" target="_blank">here</a> for my old baby site.</p>
 				<div style="height, 500px">
 				</div>
 			</div>
 		</div>
-		
+
 	</div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

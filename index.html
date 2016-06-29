@@ -11,7 +11,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
-	
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,37 +22,37 @@
   </head>
   <body>
 	<div class="container-fluid">
-	
+
 		<!-- A Header. -->
 		<header>
 			<!-- With my name in it. I used the imported font to style my name in the body. -->
 			<h1>John Beckius</h1>
-			
-			<nav><!-- Navigation bar -->
-				<div id="navBar">
-					<!-- Home button -->
-					<div id="homeButton" >
-						
-						<a href="index.html">
-							<div id="crossfade">
-								<img alt="" class="bottom" src="img/jBOnlyLogoWhite.png">
-								<img alt="" class="top" src="img/jBOnlyLogo.png">						
-							</div>
-						</a>
-						
-					</div>
-					<!-- Nav buttons -->
-					<div  id="rightBar">
-						<a href="about.html"><button class="navButton">About</button></a>
-						<a href="advertising.html"><button class="navButton">Advertising</button></a>
-						<a href="contact.html"><button class="navButton">Contact</button></a>						
-						<!-- For later use <button class="navButton">Resume</button> -->
-					</div>
-				</div> 
-			</nav><!-- End Nav Bar -->
-				
+
+      <nav>
+        <ul class="cf">
+          <li  id="home">
+            <a href="index.html">
+              <div id="crossfade">
+                <img src="img/jBOnlyLogoWhite.png" class="bottom" alt="John Beckius Logo">
+                <img src="img/jBOnlyLogo.png" class="top" alt="John Beckius Logo">
+              </div>
+            </a>
+          </li>
+          <li class="navButton" id="contact"><a href="contact.html">Contact</a></li>
+          <li class="navButton" id="advertising"><a href="advertising.html">Advertising</a></li>
+          <li class="navButton" id="about"><a href="about.html">About</a></li>
+          <li class="navButton" id="menu"><a class="dropdown" href="#">Menu</a>
+            <ul>
+                <li class="navButton"><a href="about.html">About</a></li>
+                <li class="navButton"><a href="advertising.html">Advertising</a></li>
+                <li class="navButton"><a href="contact.html">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
 		</header>
-		
+
 		<div id="indexContent" class="content">
 				<h1>John Beckius</h1>
 				<h2>Copywriter and Web Developer</h2>
@@ -63,13 +63,13 @@
 				<img id="BDLogo" class="imgSquare" src="img/blackDiamond/bdSilhouetteLogo.png" alt="Black Diamond Logo">
 				<img id="DBLogo" class="imgSquare" src="img/deepBlue/deepBlueLogoClean.png" alt="Deep Blue Watches Logo">
 			</div>
-			
+
 			<!-- Added Block Quote -->
 			<blockquote cite="https://en.wikiquote.org/wiki/Publilius_Syrus">
 				<p>It is a bad plan that admits of no modification <br /> -Publilius Syrus, Sententiae</p>
 			</blockquote>
 		</div>
-		
+
 	</div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

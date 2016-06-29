@@ -11,7 +11,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
-	
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,36 +22,36 @@
   </head>
    <body>
 	<div class="container-fluid">
-		<header>	
-			
-			<nav><!-- Navigation bar -->
-				<div id="navBar">
-					<!-- Home button -->
-					<div id="homeButton" >
-						
-						<a href="index.html">
-							<div id="crossfade">
-								<img alt="" class="bottom" src="img/jBOnlyLogoWhite.png">
-								<img alt="" class="top" src="img/jBOnlyLogo.png">						
-							</div>
-						</a>
-						
-					</div>
-					<!-- Nav buttons -->
-					<div  id="rightBar">
-						<a href="about.html"><button class="navButton">About</button></a>
-						<a href="advertising.html"><button class="navButton">Advertising</button></a>
-						<a href="contact.html"><button class="navButton">Contact</button></a>						
-						<!-- For later use <button class="navButton">Resume</button> -->
-					</div>
-				</div> 
-			</nav><!-- End Nav Bar -->
-		</header>		
-				
+		<header>
+
+      <nav>
+        <ul class="cf">
+          <li  id="home">
+            <a href="index.html">
+              <div id="crossfade">
+                <img src="img/jBOnlyLogoWhite.png" class="bottom" alt="John Beckius Logo">
+                <img src="img/jBOnlyLogo.png" class="top" alt="John Beckius Logo">
+              </div>
+            </a>
+          </li>
+          <li class="navButton" id="contact"><a href="contact.html">Contact</a></li>
+          <li class="navButton" id="advertising"><a href="advertising.html">Advertising</a></li>
+          <li class="navButton" id="about"><a href="about.html">About</a></li>
+          <li class="navButton" id="menu"><a class="dropdown" href="#">Menu</a>
+            <ul>
+                <li class="navButton"><a href="about.html">About</a></li>
+                <li class="navButton"><a href="advertising.html">Advertising</a></li>
+                <li class="navButton"><a href="contact.html">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- End Nav Bar -->
+		</header>
+
 		<div class="content">
 			<h1>Reaching Out</h1>
 			<p id="memories">Interested in making memories? Chatting about this, that, and the other?<br />
-			Leave me your name, e-mail address, and a few words about yourself and I'll see what 
+			Leave me your name, e-mail address, and a few words about yourself and I'll see what
 			I can whip up.<p>
 			<!-- Fix form widths so they don't go beyond screen edge on smaller windows. -->
 			<form action='#'>
@@ -65,7 +65,7 @@
 						<input id="emailForm" class="form-control" type="email" name="email" />
 					</p> </label>
 				</div>
-				
+
 				<div class="control-group">
 					<label><p>A few choice words:</p>
 					<textarea id="commentsForm" class="form-control" name="comments" placeholder="Type 'em here..." cols="40" rows="5" onclick="javascript:eraseText();"
@@ -86,7 +86,7 @@
 						</div>
 					</div>
 				</form>
-			
+
 		</div>
 	</div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
