@@ -26,9 +26,6 @@ textarea {
 	color: darkgrey;
 }
 
-nav {
-	/* Might use to change nav button block width to 70%*/
-}
 
 nav {
 	background-color: #E9E9E9;
@@ -39,6 +36,7 @@ nav {
 	z-index: 10;
 }
 
+/*The bootstrap is trash code*/
 nav a:-webkit-any-link {
     color: black;
     text-decoration: none;
@@ -57,22 +55,12 @@ nav a:-webkit-any-link {
 	-webkit-transition-duration: 0.2s; /* Safari */
 	transition-duration: 0.2s;
 }
+
 nav a {
-  /*margin: 0;
-  width: 100%;
-  font-family: "verdana", sans-serif;;;
-  font-size: 16px;
-  background: #e99;
-  color: #444;
-  display: block;
-  padding: 13px 0;
-  text-align: center;
-  text-decoration: none;*/
+
   display: block;
   padding: 13px 0;
 }
-/*The bootstrap is trash code*/
-
 
 .navButton:hover {
 	background-color: #CCCCCC;
@@ -111,11 +99,6 @@ nav li {
   width: 70px;
 }
 
-#rightBar {
-	float: right;
-	display: inline-block;
-}
-
 #menu {
   display: none;
 }
@@ -124,16 +107,28 @@ nav li {
   display: none;
 }
 
+#crossfade {
+	position: center;
+	height: 50px;
+}
+
+/* I hope you'll accept this as my opacity alteration, even though it's not a background.*/
+#crossfade img {
+	position: absolute;
+  left: 0;
+	height: 45px;
+	opacity: 1;
+	-webkit-transition: opacity 0.05s ease-in-out; /* Safari */
+	transition: opacity 0.01s ease-in-out;
+}
+
+#crossfade img.top:hover {
+	opacity: 0;
+}
+
 button a {
 	color: black;
 	text-decoration: none;
-}
-
-#homeButton {
-	float: left;
-	display: inline-block;
-	margin-left: 2px;
-	margin-top: 2px;
 }
 
 .content {
@@ -158,22 +153,6 @@ button a {
 	 font-size: 16px;
  }
 
-#crossfade {
-	position: center;
-	height: 50px;
-}
-
-/* I hope you'll accept this as my opacity alteration, even though it's not a background.*/
-#crossfade img {
-	position: absolute;
-  left: 0;
-	height: 45px;
-	opacity: 1;
-	-webkit-transition: opacity 0.05s ease-in-out; /* Safari */
-	transition: opacity 0.01s ease-in-out;
-}
-
-
 .pageButton {
 	font-size: 16 px;
 	color: #efefef;
@@ -184,11 +163,6 @@ button a {
 	height: 35px;
 	border: 1px none;
 	border-radius: 4px;
-}
-
-
-#crossfade img.top:hover {
-	opacity: 0;
 }
 
 #imageRow {
@@ -208,23 +182,23 @@ button a {
 	border-radius: 5%;
 }
 
-
 #JSReset, #JSSubmit {
 	display: inline;
 	width: 80px;
 	text-align: center;
 	text-transform: capitalize;
 }
+
 #inputLog {
 	margin-top: 20px;
 }
 
 #imageRow #BDLogo {
-	/* for future use */
-}
-#imageRow #DBLogo {
+	/* for future use */}
 
+#imageRow #DBLogo {
 }
+
 #imageRow #NGKLogo {
 	border: 1px solid #c0c0c0;
 	padding: 1px;
@@ -263,7 +237,7 @@ form {
 	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 350px;
+	width: 100%;
 	text-align: left;
 }
 
