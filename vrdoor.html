@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VR Door concept</title>
+    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+    <link href="#" rel="stylesheet">
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <video id="catVideo" autoplay loop="true" src="video/cat.mp4">
+      </a-assets>
+      <a-video src="video/cat.mp4"
+        width="5"
+        height="5"
+        position="0 1 -19.89"></a-video>
+      <a-box color="#F6B86E"
+        width="10"
+        height="8"
+        depth="0.2"
+        position="5 1.5 0"></a-box>
+
+      <a-box color="#F6B86E"
+        width="10"
+        height="8"
+        depth="0.2"
+        position="-7 1.5 0"></a-box>
+
+      <a-box color="#F6B86E"
+        width="20"
+        height="8"
+        depth="0.2"
+        position="9.9 1.5 -10"
+        rotation="0 90 0"></a-box>
+
+      <a-box color="#F6B86E"
+        width="20"
+        height="8"
+        depth="0.2"
+        position="-11.9 1.5 -10"
+        rotation="0 90 0"></a-box>
+
+        <a-box color="#F6B86E"
+          width="22"
+          height="8"
+          depth="0.2"
+          position="-1 1.5 -20"
+          rotation="0 0 0"></a-box>
+
+        <a-box color="#9F9F9F"
+          width="22"
+          height="0.1"
+          depth="20"
+          position="-1 -2.5 -10"
+          rotation=""></a-box>
+
+      <a-entity id="door">
+        <a-box opacity="0"
+          width="2.2"
+          height="5"
+          depth="0.1"
+          position="0 0 -1"
+          rotation="0 90 0"
+          color="#FFFFFF"></a-box>
+
+        <a-box color="#562903"
+          width = "2"
+          height = "5"
+          depth = "0.1"
+          position="-1 0 0">
+          <a-entity geometry="primitive: cylinder;
+                              height: 0.5;
+                              radius: 0.06"
+            material="color:#F4CA00"
+            position="-0.7 0 0"
+            rotation="0 90 90"></a-entity>
+
+          <a-entity geometry="primitive: sphere;
+                              radius: 0.1"
+            material="color:#F4CA00"
+            position="-0.7 0 0.2"></a-entity>
+
+          <a-entity geometry="primitive: sphere;
+                              radius: 0.1"
+            material="color:#F4CA00"
+            position="-0.7 0 -0.2"></a-entity></a-box>
+
+
+        <a-animation attribute="rotation" begin="mouseenter" to="0 90 0" dur="1000"></a-animation>
+        <a-animation attribute="rotation" begin="mouseleave" to="0 0 0" dur="1000"></a-animation>
+
+      </a-entity>
+
+      <a-sky color="#6666FF"></a-sky>
+
+      <a-camera position= "0 1.8 3">
+        <a-cursor color="#00FF00" />
+      </a-camera>
+    </a-scene>
+
+  <script src="#"></script>
+  </body>
+</html>
