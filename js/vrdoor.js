@@ -3,18 +3,19 @@ var timer;
 var timer2;
 
 function message(msg) {
-  console.log(msg);
+  // console.log(msg);
 }
+console.log(document.cookie);
 var door = document.getElementById('door');
 var teleporter = document.getElementsByClassName('teleporter');
 var camera = document.getElementById('camera');
 var thisRoom = document.getElementsByTagName("a-scene");
-console.log(typeof(thisRoom[0].id));
+// console.log(typeof(thisRoom[0].id));
 if(thisRoom[0].id === "mainRoom" && document.cookie === "lastRoom=secondRoom") {
   camera.setAttribute('position', "9.5 1.8 -11");
 }
-console.log(teleporter);
-console.log(typeof(teleporter));
+// console.log(teleporter);
+// console.log(typeof(teleporter));
 // console.log(door.getAttribute('rotation'));
 {let i = 0;
   function doorMove() {
@@ -35,12 +36,12 @@ console.log(typeof(teleporter));
       // clearInterval(timer2);
     }, 5);
     }
-    console.log(door.getAttribute('rotation').y);
+    // console.log(door.getAttribute('rotation').y);
   }
 }
 
 function teleport() {
-  console.log(this.getAttribute('position'));
+  // console.log(this.getAttribute('position'));
   camera.setAttribute('position', this.getAttribute('position'));
 }
 door.addEventListener("click", doorMove);
