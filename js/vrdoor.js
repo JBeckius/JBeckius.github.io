@@ -8,6 +8,11 @@ function message(msg) {
 var door = document.getElementById('door');
 var teleporter = document.getElementsByClassName('teleporter');
 var camera = document.getElementById('camera');
+var thisRoom = document.getElementsByTagName("a-scene");
+console.log(typeof(thisRoom[0].id));
+if(thisRoom[0].id === "mainRoom" && document.cookie === "lastRoom=secondRoom") {
+  camera.setAttribute('position', "9.5 1.8 -11");
+}
 console.log(teleporter);
 console.log(typeof(teleporter));
 // console.log(door.getAttribute('rotation'));
@@ -43,9 +48,9 @@ for(var i = 0; i < teleporter.length; i++) {
   teleporter[i].addEventListener("click", teleport);
 }
 // door.addEventListener("mouseleave", timer2 = window.setInterval(doorClose, 100));
-var lastRoom = document.getElementsByTagName("a-scene");
-console.log(lastRoom[0].id);
-document.cookie="lastRoom=" + lastRoom[0].id;
+
+console.log(thisRoom[0].id);
+document.cookie="lastRoom=" + thisRoom[0].id;
 speedy = setInterval(function() {
   var x = document.cookie;
   console.log(document.cookie);
