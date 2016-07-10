@@ -7,7 +7,7 @@
     <link href="#" rel="stylesheet">
   </head>
   <body>
-    <a-scene id="mainRoom">
+    <a-scene>
       <a-assets>
         <!-- <video id="catVideo" autoplay loop="true" src="video/cat.mp4"> -->
       </a-assets>
@@ -15,11 +15,11 @@
         width="5"
         height="5"
         position="0 1 -19.89"></a-video> -->
-      <a-entity text="text: Click for next room"
+      <a-entity text="text: Click for main room"
         color="black"
-        position= "9.7 3.0 -14"
-        rotation="0 270 0"></a-entity>
-      <a-sphere class="teleporter"
+        position= "-11.7 3.0 -8"
+        rotation="0 90 0"></a-entity>
+      <!-- <a-sphere class="teleporter"
         id="doorT"
         color="blue"
         radius="1"
@@ -28,7 +28,7 @@
         id="centerRoomT"
         color="blue"
         radius="1"
-        position="-1 1.8 -10"></a-sphere>
+        position="-1 1.8 -10"></a-sphere> -->
       <a-box color="#F6B86E"
         width="10"
         height="8"
@@ -36,12 +36,12 @@
         position="5 1.5 0"></a-box>
 
       <a-entity id="portal"
-                onClick="location.href='vrdoor2.html'">
+        onClick="location.href='vrdoor.html'">
         <a-box color="black"
           width = "2"
           height = "5"
           depth = "0.1"
-          position="9.8 0 -11"
+          position="-11.8 0 -11"
           rotation="0 90 0"></a-box>
 
       </a-entity>
@@ -118,10 +118,11 @@
       </a-entity>
 
       <a-sky color="#6666FF"></a-sky>
+
       <a-entity id="camera"
-        position="-1 1.8 3"
-        rotation>
-        <a-camera>
+        position="-11 1.8 -11"
+        rotation="0 270 0">
+        <a-camera >
           <a-cursor color="#00FF00" />
         </a-camera></a-entity>
     </a-scene>

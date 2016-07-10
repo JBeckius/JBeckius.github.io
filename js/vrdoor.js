@@ -1,3 +1,4 @@
+
 var timer;
 var timer2;
 
@@ -42,3 +43,10 @@ for(var i = 0; i < teleporter.length; i++) {
   teleporter[i].addEventListener("click", teleport);
 }
 // door.addEventListener("mouseleave", timer2 = window.setInterval(doorClose, 100));
+var lastRoom = document.getElementsByTagName("a-scene");
+console.log(lastRoom[0].id);
+document.cookie="lastRoom=" + lastRoom[0].id;
+speedy = setInterval(function() {
+  var x = document.cookie;
+  console.log(document.cookie);
+}, 1000);
