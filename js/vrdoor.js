@@ -10,7 +10,8 @@ var camera = document.getElementById('camera');
 var thisRoom = document.getElementsByTagName("a-scene");
 // console.log(typeof(thisRoom[0].id));
 if(thisRoom[0].id === "mainRoom" && document.cookie === "lastRoom=rightRoom") {
-  camera.setAttribute('position', "9.5 1.8 -11");
+  camera.setAttribute('position', "7.5 1.8 -11");
+  camera.setAttribute('rotation', "0 270 0")
 }
 // console.log(teleporter);
 // console.log(typeof(teleporter));
