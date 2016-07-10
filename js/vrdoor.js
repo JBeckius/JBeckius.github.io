@@ -50,8 +50,8 @@ for(var i = 0; i < teleporter.length; i++) {
 // door.addEventListener("mouseleave", timer2 = window.setInterval(doorClose, 100));
 
 console.log(thisRoom[0].id);
-document.cookie="lastRoom=" + thisRoom[0].id;
-speedy = setInterval(function() {
-  var x = document.cookie;
-  console.log(document.cookie);
-}, 1000);
+
+window.addEventListener("unload", function(event) {
+  document.cookie="lastRoom=" + thisRoom[0].id;
+    console.log(document.cookie);
+  });
