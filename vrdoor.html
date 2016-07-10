@@ -14,6 +14,14 @@
         width="5"
         height="5"
         position="0 1 -19.89"></a-video> -->
+      <a-sphere class="teleporter"
+        color="blue"
+        radius="1"
+        position="-4 1.5 3"></a-sphere>
+      <a-sphere class="teleporter"
+        color="blue"
+        radius="1"
+        position="4 1.5 3"></a-sphere>
       <a-box color="#F6B86E"
         width="10"
         height="8"
@@ -93,7 +101,8 @@
 
       <a-sky color="#6666FF"></a-sky>
 
-      <a-camera position= "0 1.8 3">
+      <a-camera id="camera"
+        position= "0 1.8 3">
         <a-cursor color="#00FF00" />
       </a-camera>
     </a-scene>

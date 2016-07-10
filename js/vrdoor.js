@@ -5,6 +5,10 @@ function message(msg) {
   console.log(msg);
 }
 var door = document.getElementById('door');
+var teleporter = document.getElementsByClassName('teleporter');
+var camera = document.getElementById('camera');
+console.log(teleporter);
+console.log(typeof(teleporter));
 // console.log(door.getAttribute('rotation'));
 {let i = 0;
   function doorMove() {
@@ -28,5 +32,13 @@ var door = document.getElementById('door');
     console.log(door.getAttribute('rotation').y);
   }
 }
+
+function teleport() {
+  console.log(this.getAttribute('position'));
+  camera.setAttribute('position', this.getAttribute('position'));
+}
 door.addEventListener("click", doorMove);
+for(var i = 0; i < teleporter.length; i++) {
+  teleporter[i].addEventListener("click", teleport);
+}
 // door.addEventListener("mouseleave", timer2 = window.setInterval(doorClose, 100));
