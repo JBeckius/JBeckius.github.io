@@ -54,7 +54,7 @@
           position="-1 -2.5 -10"
           rotation=""></a-box>
 
-      <a-entity id="door">
+      <a-entity id="door" onClick="location.href='https://google.com'" rotation="0 0 0">
         <a-box opacity="0"
           width="2.2"
           height="5"
@@ -63,7 +63,7 @@
           rotation="0 90 0"
           color="#FFFFFF"></a-box>
 
-        <a-box color="#562903"
+          <a-box color="#562903"
           width = "2"
           height = "5"
           depth = "0.1"
@@ -86,8 +86,8 @@
             position="-0.7 0 -0.2"></a-entity></a-box>
 
 
-        <a-animation attribute="rotation" begin="mouseenter" to="0 90 0" dur="1000"></a-animation>
-        <a-animation attribute="rotation" begin="mouseleave" to="0 0 0" dur="1000"></a-animation>
+        <!-- <a-animation attribute="rotation" begin="mouseenter" to="0 90 0" dur="1000"></a-animation> -->
+        <!-- <a-animation attribute="rotation" begin="mouseleave" to="0 0 0" dur="1000"></a-animation> -->
 
       </a-entity>
 
@@ -98,6 +98,6 @@
       </a-camera>
     </a-scene>
 
-  <script src="#"></script>
+  <script src="js/vrdoor.js"></script>
   </body>
 </html>
