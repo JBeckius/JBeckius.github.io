@@ -2,9 +2,6 @@
 var timer;
 var timer2;
 
-function message(msg) {
-  // console.log(msg);
-}
 console.log(document.cookie);
 console.log(typeof(document.cookie));
 var door = document.getElementById('door');
@@ -12,7 +9,7 @@ var teleporter = document.getElementsByClassName('teleporter');
 var camera = document.getElementById('camera');
 var thisRoom = document.getElementsByTagName("a-scene");
 // console.log(typeof(thisRoom[0].id));
-if(thisRoom[0].id === "mainRoom" && document.cookie === "lastRoom=secondRoom") {
+if(thisRoom[0].id === "mainRoom" && document.cookie === "lastRoom=rightRoom") {
   camera.setAttribute('position', "9.5 1.8 -11");
 }
 // console.log(teleporter);
