@@ -6,6 +6,7 @@ function message(msg) {
   // console.log(msg);
 }
 console.log(document.cookie);
+console.log(typeof(document.cookie));
 var door = document.getElementById('door');
 var teleporter = document.getElementsByClassName('teleporter');
 var camera = document.getElementById('camera');
