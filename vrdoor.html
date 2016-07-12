@@ -4,6 +4,7 @@
     <title>VR Door concept</title>
     <script src="js/aframe.js"></script>
     <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
     <link href="#" rel="stylesheet">
   </head>
   <body>
@@ -79,6 +80,8 @@
           depth="20"
           position="-1 -2.5 -10"
           rotation=""></a-box>
+
+      <a-entity geometry="primitive:box;" material="shader:gif;src:url(nyancat.gif);color:green;opacity:.8"></a-entity>
 
       <a-entity id="door" rotation="0 0 0">
         <!-- <a-box opacity="0"

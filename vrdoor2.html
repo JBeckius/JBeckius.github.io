@@ -10,6 +10,7 @@
     <a-scene id="rightRoom">
       <a-assets>
         <!-- <video id="catVideo" autoplay loop="true" src="video/cat.mp4"> -->
+        <img id="deepBlue" src="img/deepBlue/dive.jpg">
       </a-assets>
       <!-- <a-video src="video/cat.mp4"
         width="5"
@@ -19,22 +20,30 @@
         color="black"
         position= "-11.7 3.0 -8"
         rotation="0 90 0"></a-entity>
-      <!-- <a-sphere class="teleporter"
+      <!--<a-sphere class="teleporter"
         id="doorT"
         color="blue"
         radius="1"
-        position="-1 1.8 3"></a-sphere>
+        position="-1 1.8 3"></a-sphere> -->
       <a-sphere class="teleporter"
         id="centerRoomT"
         color="blue"
         radius="1"
-        position="-1 1.8 -10"></a-sphere> -->
+        position="-1 1.8 -10"></a-sphere>
+
+      <a-image src="#deepBlue"
+        position="9 1.8 -10"
+        rotation="0 270 0"
+        height="6"
+        width="10"></a-image>
+
       <a-box color="#F6B86E"
         width="10"
         height="8"
         depth="0.2"
         position="5 1.5 0"></a-box>
 
+      <!-- Sets up the portal for transpo between rooms -->
       <a-entity id="portal"
         onClick="location.href='vrdoor.html'">
         <a-box color="black"
@@ -80,6 +89,7 @@
           position="-1 -2.5 -10"
           rotation=""></a-box>
 
+      <!-- Defines the door entity -->
       <a-entity id="door" rotation="0 0 0">
         <!-- <a-box opacity="0"
           width="2.2"
