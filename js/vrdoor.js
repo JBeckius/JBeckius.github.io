@@ -49,9 +49,9 @@ for(var i = 0; i < teleporter.length; i++) {
 }
 // door.addEventListener("mouseleave", timer2 = window.setInterval(doorClose, 100));
 
-console.log(thisRoom[0].id);
+// console.log(thisRoom[0].id);
 
 window.addEventListener("unload", function(event) {
   document.cookie="lastRoom=" + thisRoom[0].id;
-    console.log(document.cookie);
+    // console.log(document.cookie);
   });
