@@ -1,0 +1,314 @@
+/*Imported Font*/
+@font-face {
+    font-family: 'intro_head_rbase';
+    src: url('../fonts/introheadr_base_macroman/introheadr-base-webfont.eot');
+    src: url('../fonts/introheadr_base_macroman/introheadr-base-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/introheadr_base_macroman/introheadr-base-webfont.woff2') format('woff2'),
+         url('../fonts/introheadr_base_macroman/introheadr-base-webfont.woff') format('woff'),
+         url('../fonts/introheadr_base_macroman/introheadr-base-webfont.ttf') format('truetype'),
+         url('../fonts/introheadr_base_macroman/introheadr-base-webfont.svg#intro_head_rbase') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+	margin-left: -15px;
+	padding: 0;
+	text-align: center;
+}
+
+header h1 {
+	display: none;
+}
+
+textarea {
+	font-family: sans-serif;
+	color: darkgrey;
+}
+
+
+nav {
+	background-color: #E9E9E9;
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	z-index: 10;
+}
+
+/*The bootstrap is trash code*/
+nav a:-webkit-any-link {
+    color: black;
+    text-decoration: none;
+    cursor: auto;
+}
+
+.navButton {
+	font-size: 16px;
+	color: black;
+	/* Added background-color, styled something else's opacity. */
+	background-color: #E9E9E9;
+	font-family: "verdana", sans-serif;
+	height:50px;
+	border: 1px solid #E9E9E9;
+	margin-bottom: auto;
+	-webkit-transition-duration: 0.2s; /* Safari */
+	transition-duration: 0.2s;
+}
+
+nav a {
+
+  display: block;
+  padding: 13px 0;
+}
+
+.navButton:hover {
+	background-color: #CCCCCC;
+	color: white;
+	border: 1px solid lightgrey;
+	border-radius: 2px;
+}
+nav ul {
+  list-style: none;
+  top: -30px;
+  margin: 0px;
+}
+nav li {
+  float: right;
+  width: 100px;
+  padding: 0px;
+  top: -20px;
+}
+#home {
+  padding: 0;
+  margin: 0;
+  width: 55px;
+  float: left;
+  display: inline-block;
+}
+#home a {
+  padding: 0;
+}
+#about {
+  width: 56px;
+}
+#advertising {
+  width: 100px;
+}
+#contact {
+  width: 70px;
+}
+
+#menu {
+  display: none;
+}
+
+#menu li {
+  display: none;
+}
+
+#crossfade {
+	position: center;
+	height: 50px;
+}
+
+/* I hope you'll accept this as my opacity alteration, even though it's not a background.*/
+#crossfade img {
+	position: absolute;
+  left: 0;
+	height: 45px;
+	opacity: 1;
+	-webkit-transition: opacity 0.05s ease-in-out; /* Safari */
+	transition: opacity 0.01s ease-in-out;
+}
+
+#crossfade img.top:hover {
+	opacity: 0;
+}
+
+button a {
+	color: black;
+	text-decoration: none;
+}
+
+.content {
+	/*margin: 70px auto;*/
+	width: 70%;
+	margin-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#indexContent h1{
+	font-family: intro_head_rbase;
+	font-size: 60px;
+	margin-bottom: 0px;
+}
+#indexContent h2 {
+	font-family: intro_head_rbase;
+	margin-top: 0px;
+}
+
+.content #memories {
+	 font-size: 16px;
+ }
+
+.pageButton {
+	font-size: 16 px;
+	color: #efefef;
+	background-color: #888888;
+	/*font-family: "verdana", sans-serif;*/
+	text-transform: capitalize;
+	font-weight: normal;
+	height: 35px;
+	border: 1px none;
+	border-radius: 4px;
+}
+
+#imageRow {
+	width: 100%;
+}
+
+#imageRow img {
+	width: 200px/*10em*/;
+	/*10em*/;
+	border-radius: 5%;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+#imageRow img:hover {
+	border: 2px solid black !important;
+	border-radius: 5%;
+}
+
+#JSReset, #JSSubmit {
+	display: inline;
+	width: 80px;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+#inputLog {
+	margin-top: 20px;
+}
+
+#imageRow #BDLogo {
+	/* for future use */}
+
+#imageRow #DBLogo {
+}
+
+#imageRow #NGKLogo {
+	border: 1px solid #c0c0c0;
+	padding: 1px;
+}
+
+blockquote {
+	border-left: 0px;
+}
+
+#aboutPhoto {
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+#aboutPhoto img{
+	float: right;
+	width: 100%;
+	display: block;
+	margin-right: 15px;
+	margin-top: 25px;
+	border: 1px solid #c0c0c0;
+}
+
+#aboutText {
+	margin-top: 3px;
+	text-align: left;
+	font-size: 16px;
+	border-left: 2px solid #E9E9E9;
+}
+
+#aboutText h3 {
+	font-weight: bold;
+}
+
+form {
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	text-align: left;
+}
+
+#testSpace {
+	height: 500px;
+}
+
+#adImgRow img {
+	width: 23%;
+	border-radius: 5%;
+}
+
+#iFrameDiv {
+	position: relative;
+	width: 100%;
+	height: 0px;
+	padding-bottom: 60%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+iframe {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width:100%;
+	height: 100%;
+}
+audio {
+	width: 50%;
+}
+#NGKImgRow {
+	width: 50%;
+	min-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 10px solid #e9e9e9;
+	border-radius: 10px;
+	height: 450px;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+#NGKImgRow img {
+	width: 90%;
+
+}
+
+#serta img{
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+	#imageRow img{
+		width: 43%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+  #about, #advertising, #contact {
+    display: none;
+  }
+  #menu {
+    content: "";
+    display: inline-block;
+  }
+  #menu li {
+    font-size: 12px;
+  }
+
+  #menu:hover li {
+    display: block;
+  }
+}

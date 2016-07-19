@@ -1,0 +1,34 @@
+{
+  "name": "deadhedge.github.io",
+  "version": "0.1.0",
+  "description": "John Beckius personal website",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "bourbon": "^4.2.7",
+    "bourbon-neat": "^1.8.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "scripts": {
+    "test": "gulp Sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JBeckius/JBeckius.github.io.git"
+  },
+  "keywords": [
+    "John",
+    "Beckius",
+    "Front-end",
+    "Developer",
+    "aframe",
+    "VR"
+  ],
+  "author": "JohnBeckius",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JBeckius/JBeckius.github.io/issues"
+  },
+  "homepage": "https://github.com/JBeckius/JBeckius.github.io"
+}
