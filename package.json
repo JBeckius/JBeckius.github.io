@@ -7,6 +7,8 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2",
+    "gulp-webserver": "^0.9.1",
+    "http-server": "^0.9.0",
     "node-bourbon": "^4.2.8",
     "node-neat": "^1.7.2"
   },

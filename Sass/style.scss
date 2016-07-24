@@ -1,4 +1,9 @@
+//scss update 2
 /*Imported Font*/
+$pink: pink;
+$lightGrey: #e9e9e9;
+$midGrey: #C0C0C0;
+
 @font-face {
     font-family: 'intro_head_rbase';
     src: url('../fonts/introheadr_base_macroman/introheadr-base-webfont.eot');
@@ -28,7 +33,7 @@ textarea {
 
 
 nav {
-	background-color: #E9E9E9;
+	background-color: $lightGrey;
 	height: 50px;
 	position: fixed;
 	width: 100%;
@@ -47,10 +52,10 @@ nav a:-webkit-any-link {
 	font-size: 16px;
 	color: black;
 	/* Added background-color, styled something else's opacity. */
-	background-color: #E9E9E9;
+	background-color: $lightGrey;
 	font-family: "verdana", sans-serif;
 	height:50px;
-	border: 1px solid #E9E9E9;
+	border: 1px solid $lightGrey;
 	margin-bottom: auto;
 	-webkit-transition-duration: 0.2s; /* Safari */
 	transition-duration: 0.2s;
@@ -99,6 +104,10 @@ nav li {
   width: 70px;
 }
 
+#vr {
+  width: 60px;
+}
+
 #menu {
   display: none;
 }
@@ -112,7 +121,7 @@ nav li {
 	height: 50px;
 }
 
-/* I hope you'll accept this as my opacity alteration, even though it's not a background.*/
+
 #crossfade img {
 	position: absolute;
   left: 0;
@@ -167,20 +176,19 @@ button a {
 
 #imageRow {
 	width: 100%;
+  img {
+  	width: 200px/*10em*/;
+  	/*10em*/;
+  	border-radius: 5%;
+  	margin-top: 2px;
+  	margin-bottom: 2px;
+  }
+  img:hover {
+  	border: 2px solid black !important;
+  	border-radius: 5%;
+  }
 }
 
-#imageRow img {
-	width: 200px/*10em*/;
-	/*10em*/;
-	border-radius: 5%;
-	margin-top: 2px;
-	margin-bottom: 2px;
-}
-
-#imageRow img:hover {
-	border: 2px solid black !important;
-	border-radius: 5%;
-}
 
 #JSReset, #JSSubmit {
 	display: inline;
@@ -200,7 +208,7 @@ button a {
 }
 
 #imageRow #NGKLogo {
-	border: 1px solid #c0c0c0;
+	border: 1px solid $midGrey;
 	padding: 1px;
 }
 
@@ -211,22 +219,22 @@ blockquote {
 #aboutPhoto {
 	margin-right: 0px;
 	padding-right: 0px;
+  img {
+  	float: right;
+  	width: 100%;
+  	display: block;
+  	margin-right: 15px;
+  	margin-top: 25px;
+  	border: 1px solid $midGrey;
+  }
 }
 
-#aboutPhoto img{
-	float: right;
-	width: 100%;
-	display: block;
-	margin-right: 15px;
-	margin-top: 25px;
-	border: 1px solid #c0c0c0;
-}
 
 #aboutText {
 	margin-top: 3px;
 	text-align: left;
 	font-size: 16px;
-	border-left: 2px solid #E9E9E9;
+	border-left: 2px solid $lightGrey;
 }
 
 #aboutText h3 {
@@ -273,7 +281,7 @@ audio {
 	min-width: 300px;
 	margin-left: auto;
 	margin-right: auto;
-	border: 10px solid #e9e9e9;
+	border: 10px solid $lightGrey;
 	border-radius: 10px;
 	height: 450px;
 	overflow: scroll;
