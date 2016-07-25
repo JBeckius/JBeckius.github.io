@@ -18,7 +18,7 @@ gulp.task('webserver', function() {
 });
 
 var paths = {
-    scss: './assets/sass/*.scss'
+    scss: './sass/*.scss'
 };
 
 gulp.task('Sass', function () {
