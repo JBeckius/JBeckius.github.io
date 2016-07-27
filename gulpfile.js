@@ -2,21 +2,11 @@
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var neat = require('node-neat').includePaths;
-var webserver = require('gulp-webserver');
+var connect = require('gulp-connect');
 
-gulp.task('webserver', function() {
-  gulp.src('app')
-    .pipe(webserver({
-      livereload: true,
-      directoryListing: true,
-      open: true,
-      port: 8080,
-      path: '#/index.html',
-      fallback: '#/index.html'
-    }));
+gulp.task('connect', function() {
+  connect.server();
 });
-
 var paths = {
     scss: './assets/scss/*.scss'
 };
@@ -31,6 +21,7 @@ gulp.task('sass:watch', function () {
   gulp.watch('./assets/scss/**/*.scss', ['sass']);
 });
 
-gulp.task('default',function(){
-    gulp.start('styles', 'Sass', 'Sass:watch');
-});
+gulp.task('default', ['connect', 'sass', 'sass:watch']);
+// function(){
+//     gulp.start('styles', 'Sass', 'Sass:watch');
+// });
