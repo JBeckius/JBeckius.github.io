@@ -254,7 +254,7 @@ audio {
     width: 43%; } }
 
 @media only screen and (max-width: 500px) {
-  #about, #advertising, #contact {
+  #about, #advertising, #contact, #vr, #github {
     display: none; }
   #menu {
     content: "";
