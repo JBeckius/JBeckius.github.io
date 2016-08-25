@@ -9,7 +9,17 @@ app.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'app/components/aframe/aframe1.html',
       controller: 'aframeController'
     })
+    .when('/aframe2', {
+      templateUrl: 'app/components/aframe/aframe2.html',
+      controller: 'aframeController'
+    })
     .when('/advertising', {
       templateUrl: 'app/components/advertising/advertising.html'
     })
+    .when('/resume', {
+      templateUrl: 'app/components/resume/resume.html'
+    })
+    .when('/about', {
+      templateUrl: 'app/components/about/about.html'
+    });
 }]);
