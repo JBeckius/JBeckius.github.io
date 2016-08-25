@@ -249,6 +249,14 @@ audio {
   margin-top: 20px;
   margin-bottom: 20px; }
 
+  #resumeContainer {
+    /*margin-top: 40px;*/
+  }
+
+  #resumeContainer img{
+    width: 95%;
+  }
+
 @media only screen and (max-width: 500px) {
   #imageRow img {
     width: 43%; } }
