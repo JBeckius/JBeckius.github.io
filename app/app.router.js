@@ -23,3 +23,17 @@ app.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'app/components/about/about.html'
     });
 }]);
+
+// app.config(['$stateProvider', function($stateProvider) {
+//   $stateProvider
+//     .state('home', {
+//       url: '/',
+//       templateUrl:'app/components/home/home.html'
+//     })
+//     .state('aframe', {
+//       url: '/aframe',
+//       templateUrl: 'app/components/aframe/aframe1.html',
+//       controller: 'aframeController'
+//     })
+//     .state('afr')
+// }])
