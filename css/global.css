@@ -254,7 +254,7 @@ audio {
     width: 43%; } }
 
 @media only screen and (max-width: 500px) {
-  #about, #advertising, #contact {
+  .bigNav {
     display: none; }
   #menu {
     content: "";

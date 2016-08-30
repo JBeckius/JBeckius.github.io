@@ -1,0 +1,154 @@
+
+<a-scene id="mainRoom">
+  <a-assets>
+    <!-- <video id="catVideo" autoplay loop="true" src="video/cat.mp4"> -->
+  </a-assets>
+  <!-- <a-video src="video/cat.mp4"
+    width="5"
+    height="5"
+    position="0 1 -19.89"></a-video> -->
+  <a-entity text="text: Click for next room"
+    color="black"
+    position= "9.7 3.0 -14"
+    rotation="0 270 0"></a-entity>
+
+  <a-sphere class="teleporter"
+    id="doorT"
+    color="blue"
+    radius="1"
+    position="-1 1.8 3"></a-sphere>
+
+  <a-sphere class="teleporter"
+    id="centerRoomT"
+    color="blue"
+    radius="1"
+    position="-1 1.8 -10"></a-sphere>
+
+  <a-box color="#F6B86E"
+    width="10"
+    height="8"
+    depth="0.2"
+    position="5 1.5 0"></a-box>
+
+  <a-entity id="portal"
+            onClick="location.href='#/aframe2'">
+    <a-box color="black"
+      width = "2"
+      height = "5"
+      depth = "0.1"
+      position="9.8 0 -11"
+      rotation="0 90 0"></a-box>
+
+  </a-entity>
+
+  <a-entity text="text: Normal Space"
+    color="black"
+    position= "-11.8 3.0 -8"
+    rotation="0 90 0"></a-entity>
+
+  <a-entity id="portal"
+            onClick="location.href='#'">
+    <a-box color="black"
+      width = "2"
+      height = "5"
+      depth = "0.1"
+      position="-11.8 0 -10"
+      rotation="0 -90 0"></a-box>
+
+  </a-entity>
+
+  <a-box color="#F6B86E"
+    width="10"
+    height="8"
+    depth="0.2"
+    position="-7 1.5 0"></a-box>
+
+  <a-box color="#F6B86E"
+    width="20"
+    height="8"
+    depth="0.2"
+    position="9.9 1.5 -10"
+    rotation="0 90 0"></a-box>
+
+  <a-box color="#F6B86E"
+    width="20"
+    height="8"
+    depth="0.2"
+    position="-11.9 1.5 -10"
+    rotation="0 90 0"></a-box>
+
+  <a-box color="#F6B86E"
+    width="22"
+    height="8"
+    depth="0.2"
+    position="-1 1.5 -20"
+    rotation="0 0 0"></a-box>
+
+  <a-box color="#9F9F9F"
+    width="22"
+    height="0.1"
+    depth="20"
+    position="-1 -2.5 -10"
+    rotation=""></a-box>
+    <!-- Roof block -->
+  <a-box color="#FF0022"
+    width="18"
+    height="25"
+    position="-7 11 -10"
+    rotation="45 90 90">
+  </a-box>
+  <a-box color="#FF0022"
+    width="18"
+    height="25"
+    position="5 11 -10"
+    rotation="135 90 90">
+  </a-box>
+
+  <a-entity geometry="primitive:box;" material="shader:gif;src:url(nyancat.gif);color:green;opacity:.8"></a-entity>
+
+  <a-entity id="door" rotation="0 0 0">
+    <!-- <a-box opacity="0"
+      width="2.2"
+      height="5"
+      depth="0.1"
+      position="0 0 -1"
+      rotation="0 90 0"
+      color="#FFFFFF"></a-box> -->
+
+      <a-box color="#562903"
+      width = "2"
+      height = "5"
+      depth = "0.1"
+      position="-1 0 0">
+        <a-entity geometry="primitive: cylinder;
+                            height: 0.5;
+                            radius: 0.06"
+          material="color:#F4CA00"
+          position="-0.7 0 0"
+          rotation="0 90 90"></a-entity>
+
+        <a-entity geometry="primitive: sphere;
+                            radius: 0.1"
+          material="color:#F4CA00"
+          position="-0.7 0 0.2"></a-entity>
+
+        <a-entity geometry="primitive: sphere;
+                            radius: 0.1"
+          material="color:#F4CA00"
+          position="-0.7 0 -0.2"></a-entity></a-box>
+
+
+    <!-- <a-animation attribute="rotation" begin="mouseenter" to="0 90 0" dur="1000"></a-animation> -->
+    <!-- <a-animation attribute="rotation" begin="mouseleave" to="0 0 0" dur="1000"></a-animation> -->
+
+  </a-entity>
+
+  <a-sky color="#6666FF"></a-sky>
+  <a-entity id="camera"
+    position="-1 1.8 3"
+    rotation>
+    <a-camera>
+      <a-cursor color="#00FF00" />
+    </a-camera></a-entity>
+</a-scene>
+<!-- <script src="assets/js/vrdoor.js"></script> -->
